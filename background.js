@@ -28,7 +28,12 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
 })
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+  console.log(request)
   log.push(logger(request))
 });
+
+// chrome.system.network.getNetworkInterfaces(function(interfaces){
+//   console.log(interfaces); 
+// });
 
 // setInterval(() => console.log(log), 5000)
