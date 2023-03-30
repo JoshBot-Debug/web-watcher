@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Web Watcher",
+  "description": "Watcher",
+  "version": "1.0",
+  "permissions": [
+    "history",
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://*/"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
